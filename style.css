@@ -1,3 +1,28 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 232, 214);
 }
+
+#introCard {
+    background-color: rgb(221, 190, 169);
+    margin: 200px auto;
+    width: 500px;
+    border: 10px solid rgb(107, 112, 92);
+    border-radius: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
+    color: rgb(107, 112, 92);
+}
+
+button {
+    background-color: rgb(255, 232, 214);
+    padding: 10px;
+    color: rgb(107, 112, 92);
+    border: 3px solid rgb(107, 112, 92);
+    border-radius: 15px;
+    margin: 25px;
+}
+
+button:hover {
+    padding: 20px;
+}
+
