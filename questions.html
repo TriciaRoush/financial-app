@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Independance & Literacy Education</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--1st Question-->
+    <div id="questionCard" class="card">
+      <div class="card-body">
+        <h3>What is your main financial goal?</h3>
+        <input type="radio" name="financeGoal" id="creditRepair" value="creditRepair">
+        <label for="creditRepair">Boost/Repair your current credit score.</label><br>
+        <input type="radio" name="financeGoal" id="retire" value="retire">
+        <label for="retire">Prepare for retirement.</label><br>
+        <input type="radio" name="financeGoal" id="debtPayoff" value="debtPayoff">
+        <label for="debtPayoff">Payoff debt.</label><br>
+        <input type="radio" name="financeGoal" id="save" value="save">
+        <label for="save">Short term savings for a large purchase.</label><br>
+    </div>
+    </div>
+
+    <!--2nd Question-->
+    <div id="questionCard" class="card">
+      <div class="card-body">
+        <h3>What is your current estimated credit score?</h3>
+        <input type="radio" name="creditScore" id="bad" value="bad">
+        <label for="bad">300 - 629 Bad</label><br>
+        <input type="radio" name="creditScore" id="fair" value="fair">
+        <label for="fair">630 - 689 Fair</label><br>
+        <input type="radio" name="creditScore" id="good" value="good">
+        <label for="good">690 - 719 Good</label><br>
+        <input type="radio" name="creditScore" id="great" value="great">
+        <label for="great">720 - 850 Great</label><br>
+    </div>
+    </div>
+
+    <!--3rd Question-->
+    <div id="questionCard" class="card">
+      <div class="card-body">
+        <h3>How much debt do you currently owe?</h3>
+        <input type="radio" name="currentDebt" id="amt1" value="amt1">
+        <label for="amt1">$0 - $10,000</label><br>
+        <input type="radio" name="currentDebt" id="amt2" value="amt2">
+        <label for="amt2">$10,000 - $50,000</label><br>
+        <input type="radio" name="currentDebt" id="amt3" value="amt3">
+        <label for="amt3">$50,000 - $75,000</label><br>
+        <input type="radio" name="currentDebt" id="amt4" value="amt4">
+        <label for="amt4">$75,000 - $100,000+</label><br>
+    </div>
+    </div>
+
+    <!--4th Question-->
+    <div id="questionCard" class="card">
+      <div class="card-body">
+        <h3>Do you currently have a retirement plan?</h3>
+        <input type="radio" name="IRA401" id="yes401k" value="yes401k">
+        <label for="yes401k">Yes, I have an IRA or a 401K.</label><br>
+        <input type="radio" name="IRA401" id="no401k" value="no401k">
+        <label for="no401k">No, I have not started preparing for retirement yet.</label><br>
+      <button>S U B M I T</button>
+    </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
