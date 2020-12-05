@@ -8,30 +8,29 @@ $(document).ready(function() {
     $(document).on("submit", "#form1", handleForm1Submit);
     $(document).on("click", ".delete-author", handleDeleteButtonPress);
   
-    // Getting the initial list of Authors
-    getAuthors();
+    // Getting the initial list of User
+    getUser();
   
-    // A function to handle what happens when the form is submitted to create a new Author
+    // A function to handle what happens when the form is submitted to create a new User
     function handleForm1Submit(event) {
       event.preventDefault();
       // Don't do anything if the name fields hasn't been filled out
-      if (!nameInput.val().trim().trim()) {
+      if (!nameFirst.val().trim()) {
         return;
       }
-      // Calling the upsertAuthor function and passing in the value of the name input
-      upsertAuthor({
-        name: nameInput
-          .val()
-          .trim()
+      // Calling the upsertUser function and passing in the value of the name input
+      upsertUser({
+        name: nameFirst.val().trim(),
       });
     }
   
-    // A function for creating an author. Calls getAuthors upon completion
-    function upsertAuthor(authorData) {
-      $.post("/api/authors", authorData)
-        .then(getAuthors);
+
+    // A function for creating an user. Calls getUser upon completion
+    function upsertUser(userData) {
+      $.post("/api/user", userData)
+        .then(getUser);
     }
-  
+  /*
     // Function for creating a new list row for authors
     function createAuthorRow(authorData) {
       var newTr = $("<tr>");
@@ -90,6 +89,8 @@ $(document).ready(function() {
         url: "/api/authors/" + id
       })
         .then(getAuthors);
-    }
+    } */
+
+    
   });
   

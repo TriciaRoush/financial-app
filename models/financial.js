@@ -3,6 +3,9 @@
 module.exports = function(sequelize, DataTypes) {
     var FinancialInfo = sequelize.define("FinancialInfo", {
      
+
+
+      /*
         goal: {
             type: DataTypes.STRING,
             allowNull: false
@@ -15,14 +18,19 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.INTEGER,
         allowNull: false
       },
+
+      */
       currentRetirement: {
         type: DataTypes.STRING,
         allowNull: false
       },
 
+      /*
       advice: {
         type: DataTypes.STRING
-      }
+      } */
+
+      
     });
     return FinancialInfo;
   };
