@@ -67,12 +67,21 @@
         <label for="yes401k">Yes, I have an IRA or a 401K.</label><br>
         <input type="radio" name="IRA401" id="no401k" value="no401k">
         <label for="no401k">No, I have not started preparing for retirement yet.</label><br>
-      <button>S U B M I T</button>
+      
+      <form action="/action_page.php" method="get" id="form1">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+        </form>
+        
+        <button type="submit" form="form1" value="Submit">Submit</button>
     </div>
     </div>
+ </div>
 
-  </div>
-
+ <!--submit form-->
+    
   <script type="text/javascript" src="./script.js"></script>
 </body>
 
