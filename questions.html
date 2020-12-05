@@ -62,27 +62,30 @@
     <!--4th Question-->
     <div id="questionCard" class="card">
       <div class="card-body">
+        <form method="get" id="form1">
         <h3>Do you currently have a retirement plan?</h3>
         <input type="radio" name="IRA401" id="yes401k" value="yes401k">
         <label for="yes401k">Yes, I have an IRA or a 401K.</label><br>
         <input type="radio" name="IRA401" id="no401k" value="no401k">
         <label for="no401k">No, I have not started preparing for retirement yet.</label><br>
       
-      <form method="get" id="form1">
+     
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname">
+        <button type="submit" value="Submit">Submit</button>
+
         </form>
         
-        <button type="submit" form="form1" value="Submit">Submit</button>
+       
     </div>
     </div>
  </div>
 
  <!--submit form-->
     
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="./user.js"></script>
 </body>
 
 </html>
