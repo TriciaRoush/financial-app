@@ -1,18 +1,18 @@
 $(document).ready(function() {
     // Getting references to the name input and author container, as well as the table body
-    var nameInput = $("#author-name");
-    var authorList = $("tbody");
-    var authorContainer = $(".author-container");
+    var nameFirst = $("#fname");
+    var nameLast = $("#lname");
+  
     // Adding event listeners to the form to create a new object, and the button to delete
     // an Author
-    $(document).on("submit", "#author-form", handleAuthorFormSubmit);
+    $(document).on("submit", "#form1", handleForm1Submit);
     $(document).on("click", ".delete-author", handleDeleteButtonPress);
   
     // Getting the initial list of Authors
     getAuthors();
   
     // A function to handle what happens when the form is submitted to create a new Author
-    function handleAuthorFormSubmit(event) {
+    function handleForm1Submit(event) {
       event.preventDefault();
       // Don't do anything if the name fields hasn't been filled out
       if (!nameInput.val().trim().trim()) {
