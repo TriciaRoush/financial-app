@@ -1,0 +1,27 @@
+{
+  "name": "financial-app",
+  "version": "1.0.0",
+  "description": "Financial Independence &amp; Literacy Education",
+  "main": "financialPublicJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TriciaRoush/financial-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TriciaRoush/financial-app/issues"
+  },
+  "homepage": "https://github.com/TriciaRoush/financial-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  }
+}
