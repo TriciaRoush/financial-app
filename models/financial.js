@@ -20,12 +20,14 @@ module.exports = function(sequelize, DataTypes) {
       },
 
       */
+
       currentRetirement: {
         type: DataTypes.STRING,
         allowNull: false
       },
 
-      /*
+
+     /*
       advice: {
         type: DataTypes.STRING
       } */

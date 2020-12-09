@@ -4,15 +4,16 @@ module.exports = function(sequelize, DataTypes) {
       name: DataTypes.STRING
     });
   
-    /*
+    
     User.associate = function(models) {
-      // Associating Author with Posts
+      // Associating User with FinancialInfo (the data table)
+      //the data will belong to the user
       // When an Author is deleted, also delete any associated Posts
-      User.hasMany(models.Post, {
+      User.hasMany(models.FinancialInfo, {
         onDelete: "cascade"
       });  
     };
-  */
+
     return User;
   };
   
