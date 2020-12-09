@@ -13,7 +13,8 @@ $(document).ready(function() {
   
     // A function to handle what happens when the form is submitted to create a new User
     function handleForm1Submit(event) {
-      event.preventDefault();
+      event.preventDefault(); 
+      console.log("hi");
       // Don't do anything if the name fields hasn't been filled out
       if (!nameFirst.val().trim()) {
         return;
