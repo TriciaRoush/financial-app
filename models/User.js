@@ -1,7 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
       // Giving the Author model a name of type STRING
-      name: DataTypes.STRING,
+      fname: DataTypes.STRING,
+      lname: DataTypes.STRING,
       financeGoal: DataTypes.STRING,
       creditScore: DataTypes.STRING,
       currentDebt: DataTypes.STRING,
