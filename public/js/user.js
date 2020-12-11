@@ -14,7 +14,10 @@ $(document).ready(function() {
     // A function to handle what happens when the form is submitted to create a new User
     function handleForm1Submit(event) {
       event.preventDefault(); 
-      console.log("hi");
+      const IRA401 = $('input[name="IRA401"]:checked', '#form1').val();
+      const currentDebt = $('input[name="currentDebt"]:checked', '#question2').val();
+      const financeGoal = $('input[name="financeGoal"]:checked', '#question0').val();
+      const creditScore = $('input[name="creditScore"]:checked', '#question1').val();
       // Don't do anything if the name fields hasn't been filled out
       if (!nameFirst.val().trim()) {
         return;
@@ -22,6 +25,10 @@ $(document).ready(function() {
       // Calling the upsertUser function and passing in the value of the name input
       upsertUser({
         name: nameFirst.val().trim(),
+       retirement: IRA401, 
+       debt: currentDebt,
+       goal: financeGoal,
+       score: creditScore,
         //last name too
       });
     }
